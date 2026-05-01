@@ -1,17 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroImg from "@/assets/hero-ai.png";
+import WaveMesh from "@/components/WaveMesh";
 
 const Hero = () => {
   return (
-    <section id="top" className="relative pt-28 md:pt-36 pb-20 md:pb-28 overflow-hidden">
+    <section
+      id="top"
+      className="relative min-h-[92vh] flex items-center pt-28 md:pt-32 pb-24 md:pb-32 overflow-hidden"
+    >
+      {/* Background layers */}
       <div className="absolute inset-0 bg-gradient-mesh pointer-events-none" />
-      <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" />
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-gradient-radial pointer-events-none" />
+      <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1100px] h-[1100px] bg-gradient-radial pointer-events-none" />
+
+      {/* Animated wave mesh */}
+      <div className="absolute inset-0">
+        <WaveMesh />
+      </div>
+
+      {/* Soft fade for legibility at top + bottom */}
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent pointer-events-none" />
 
       <div className="container relative">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-border bg-background/60 backdrop-blur text-xs font-medium text-ink-soft animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-border bg-background/70 backdrop-blur text-xs font-medium text-ink-soft animate-fade-in">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
@@ -45,20 +58,6 @@ const Hero = () => {
             <span>Scalable</span>
             <span className="h-1 w-1 rounded-full bg-border" />
             <span>Premium delivery</span>
-          </div>
-        </div>
-
-        <div className="relative mt-16 md:mt-20 animate-fade-up" style={{ animationDelay: "300ms" }}>
-          <div className="relative mx-auto max-w-5xl">
-            <div className="absolute inset-0 -z-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
-            <img
-              src={heroImg}
-              alt="Abstract AI neural network visualization"
-              width={1280}
-              height={1024}
-              className="w-full h-auto select-none animate-float"
-              draggable={false}
-            />
           </div>
         </div>
       </div>
