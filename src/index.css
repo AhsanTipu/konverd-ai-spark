@@ -117,6 +117,18 @@
   .animate-pulse-glow {
     animation: pulse-glow 3s ease-in-out infinite;
   }
+  .animate-float-particle {
+    animation: float-particle 10s ease-in-out infinite;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float-particle {
+    0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+    50% { transform: translate(20px, -30px); opacity: 0.7; }
+  }
 
   @keyframes fade-up {
     from { opacity: 0; transform: translateY(24px); }
