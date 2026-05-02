@@ -50,9 +50,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 md:py-32 relative overflow-hidden">
-      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl pointer-events-none" />
+    <section id="services" className="py-24 md:py-32 relative overflow-hidden bg-gradient-tint">
+      <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-primary/10 blur-3xl pointer-events-none animate-pulse-glow" />
+      <div className="absolute -bottom-32 -left-32 w-[600px] h-[600px] rounded-full bg-primary-glow/15 blur-3xl pointer-events-none" />
 
       <div className="container relative">
         <Reveal>
