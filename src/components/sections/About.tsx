@@ -9,8 +9,12 @@ const stats = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-muted/40 border-y border-border">
-      <div className="container">
+    <section id="about" className="py-24 md:py-32 relative overflow-hidden bg-ink text-primary-foreground">
+      <div className="absolute inset-0 bg-gradient-primary opacity-20" />
+      <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary-glow/30 blur-3xl pointer-events-none animate-pulse-glow" />
+      <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-primary/30 blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 grid-bg opacity-10" />
+      <div className="container relative">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
           <Reveal>
             <div>
