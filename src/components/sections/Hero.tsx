@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import WaveMesh from "@/components/WaveMesh";
+import AIGraphic from "@/components/AIGraphic";
 
 const Hero = () => {
   return (
@@ -9,10 +10,13 @@ const Hero = () => {
       className="relative min-h-[100vh] flex items-center pt-28 md:pt-32 pb-24 md:pb-32 overflow-hidden"
     >
       {/* Background layers */}
+      <div className="absolute inset-0 bg-gradient-tint animate-gradient-shift pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-mesh pointer-events-none" />
-      <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
+      <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-gradient-radial pointer-events-none" />
 
+      {/* AI orbital graphic */}
+      <AIGraphic />
       {/* Animated wave mesh */}
       <div className="absolute inset-0">
         <WaveMesh />
