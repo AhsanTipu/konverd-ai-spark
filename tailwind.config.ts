@@ -21,6 +21,8 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-mesh': 'var(--gradient-mesh)',
         'gradient-radial': 'var(--gradient-radial)',
+        'gradient-section': 'var(--gradient-section)',
+        'gradient-tint': 'var(--gradient-tint)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
