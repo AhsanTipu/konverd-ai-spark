@@ -10,8 +10,9 @@ const projects = [
 
 const Work = () => {
   return (
-    <section id="work" className="py-24 md:py-32">
-      <div className="container">
+    <section id="work" className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-b from-background via-accent/30 to-background">
+      <div className="absolute top-1/3 right-0 w-[500px] h-[500px] rounded-full bg-primary/8 blur-3xl pointer-events-none" />
+      <div className="container relative">
         <Reveal>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14 md:mb-20">
             <div className="max-w-2xl">

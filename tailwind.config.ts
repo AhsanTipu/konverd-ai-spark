@@ -14,13 +14,15 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-mesh': 'var(--gradient-mesh)',
         'gradient-radial': 'var(--gradient-radial)',
+        'gradient-section': 'var(--gradient-section)',
+        'gradient-tint': 'var(--gradient-tint)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
